@@ -14,8 +14,8 @@ const Ideas = () => {
   }
   return (
     <Fragment>
+      <CreateIdea />
       <div className="ideas">
-        <CreateIdea />
         {ideas.map((idea) => (
           <IdeaItem key={idea._id} idea={idea} />
         ))}
