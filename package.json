@@ -1,0 +1,26 @@
+{
+  "name": "ideaconnect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryandeng32/IdeaConnect.git"
+  },
+  "author": "Ryan Deng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryandeng32/IdeaConnect/issues"
+  },
+  "homepage": "https://github.com/ryandeng32/IdeaConnect#readme",
+  "dependencies": {
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "mongoose": "^5.10.0"
+  }
+}
