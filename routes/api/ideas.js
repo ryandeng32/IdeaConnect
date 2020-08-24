@@ -37,7 +37,7 @@ router.post(
 // @access      Public
 router.get("/", async (req, res) => {
   try {
-    const ideas = await Idea.find();
+    const ideas = await Idea.find().sort({ date: -1 });
     res.json(ideas);
   } catch (err) {
     console.error(err.message);

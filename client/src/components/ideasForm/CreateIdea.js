@@ -31,21 +31,21 @@ const CreateIdea = () => {
         name="abstract"
         onChange={handleChange}
         placeholder="Abstract"
-        autocomplete="off"
+        autoComplete="off"
         required
       />
       <input
         value={description}
         name="description"
         onChange={handleChange}
-        autocomplete="off"
+        autoComplete="off"
         placeholder="Description"
       />
       <input
         value={skills}
         name="skills"
         onChange={handleChange}
-        autocomplete="off"
+        autoComplete="off"
         placeholder="Skills"
       />
       <button type="submit">Create</button>
