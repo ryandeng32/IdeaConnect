@@ -2,9 +2,10 @@
   margin-top: 2rem;
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 450px);
+  grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
+  background: rgb(255, 255, 255);
 }
 
 .idea {

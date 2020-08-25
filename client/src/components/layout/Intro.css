@@ -1,0 +1,75 @@
+.intro {
+  height: 370px;
+  position: relative;
+}
+
+.image {
+  background: url("../../img/Group_chat.svg") no-repeat;
+  background-size: 700px;
+  position: relative;
+  top: 5%;
+  left: 40%;
+  transform: translate(-30%, 0);
+  height: 370px;
+  width: 80%;
+}
+.intro-title {
+  text-align: right;
+  position: absolute;
+  top: 15%;
+  right: 9%;
+  font-size: 3rem;
+  color: rgb(50, 78, 83);
+}
+.intro-text {
+  padding: 0.5rem 5rem;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.842);
+  text-align: center;
+  position: absolute;
+  top: 27%;
+  right: 9%;
+  font-size: 2rem;
+  color: rgb(70, 141, 158);
+}
+@media screen and (max-width: 880px) {
+  .intro {
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-text {
+    background: none;
+    font-size: 1.2rem;
+    position: static;
+    width: 100%;
+  }
+  .intro-title {
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    position: static;
+  }
+  .image {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-size: 550px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .intro-text {
+    background: none;
+    font-size: 1rem;
+    position: static;
+    width: 100%;
+  }
+  .intro-title {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    position: static;
+  }
+}

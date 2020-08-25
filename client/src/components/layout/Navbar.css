@@ -1,0 +1,36 @@
+/* Navbar */
+.navbar {
+  z-index: 5;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  height: 12vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  /* box-shadow: 0 6px 4px -2px gray; */
+}
+
+.navbar h1 {
+  position: relative;
+  left: 10%;
+  font-size: 1.5rem;
+  transform: translate(-10%, 0);
+}
+.navbar ul {
+  margin-left: auto;
+  display: flex;
+  position: relative;
+  right: 10%;
+}
+.navbar a:hover {
+  opacity: 0.7;
+}
+.nav-dark {
+  opacity: 1;
+  background-color: rgb(245, 254, 255);
+}
+.nav-dark a {
+  color: black;
+}

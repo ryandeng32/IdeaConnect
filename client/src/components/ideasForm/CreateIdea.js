@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
 import "./Form.css";
 import axios from "axios";
 const CreateIdea = () => {
+  const [complete, setComplete] = useState(false);
   const [formData, setFormData] = useState({
     abstract: "",
     description: "",
@@ -11,6 +13,7 @@ const CreateIdea = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const onSubmit = async (e) => {
+    e.preventDefault();
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -22,8 +25,13 @@ const CreateIdea = () => {
       description: "",
       skills: "",
     });
+    setComplete(true);
   };
   const { abstract, description, skills } = formData;
+
+  if (complete) {
+    return <Redirect to="/" />;
+  }
   return (
     <form className="form" onSubmit={onSubmit}>
       <input
