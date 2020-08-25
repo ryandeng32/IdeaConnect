@@ -13,7 +13,7 @@ const App = () => {
       <section className="container">
         <Route exact path="/" component={Intro} />
         <Route exact path="/" component={Ideas} />
-        <Route exact path="/room/:id/name/:name" component={Room} />
+        <Route exact path="/room/:room/name/:name" component={Room} />
         <Route exact path="/create-idea" component={CreateIdea} />
       </section>
     </Router>

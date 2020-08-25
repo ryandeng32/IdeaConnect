@@ -6,14 +6,14 @@
   justify-content: center;
   column-gap: 3rem;
   row-gap: 3rem;
-  background: rgb(245, 254, 255);
+  background: rgb(255, 255, 255);
 }
 
 .idea {
   overflow: hidden;
   position: relative;
   text-align: center;
-  background: rgb(204, 232, 240);
+  background: rgba(222, 236, 240, 0.452);
   padding: 3rem;
   box-shadow: 0 0 5px rgb(73, 131, 141);
   border-radius: 10px;
@@ -52,7 +52,7 @@
   background: rgba(255, 255, 255, 0.521);
 }
 
-.idea .input {
+.idea .ideaInput {
   width: 80%;
   position: absolute;
   bottom: 5%;
@@ -61,13 +61,21 @@
   padding: 0.5rem;
   background: rgba(121, 121, 121, 0.185);
 }
-input {
+.ideaInput input {
   margin-right: 1rem;
   border: none;
   padding: 0.3rem;
   background: rgba(255, 255, 255, 0.74);
   border-radius: 5px;
 }
-.input i {
+.ideaInput i {
   color: rgb(114, 114, 114);
+}
+
+.ideaInput input {
+  transition: 0.2s ease-in;
+}
+.ideaInput input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #719ece;
 }

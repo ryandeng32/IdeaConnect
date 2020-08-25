@@ -1,0 +1,31 @@
+.infoBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #5c88d3;
+  border-radius: 4px 4px 0 0;
+  height: 60px;
+  width: 100%;
+}
+
+.leftInnerContainer {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  color: white;
+}
+
+.rightInnerContainer {
+  display: flex;
+  flex: 0.5;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+.signalIcon {
+  color: rgb(49, 243, 49);
+}
+.closeIcon {
+  margin-right: 2rem;
+  color: rgba(156, 42, 42, 0.568);
+}

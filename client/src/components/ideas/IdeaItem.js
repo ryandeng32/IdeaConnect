@@ -29,11 +29,12 @@ const IdeaItem = ({ idea: { abstract, description, skills, _id } }) => {
           : null}
       </div>
 
-      <div className="input">
+      <div className="ideaInput">
         <input
           value={name}
-          placeholder="Name: "
+          placeholder="Enter Name: "
           onChange={(e) => setName(e.target.value)}
+          autoComplete="off"
           required
         />
         <Link onClick={handleClick} to={`/room/${_id}/name/${name}`}>
