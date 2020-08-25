@@ -11,22 +11,33 @@ const IdeaItem = ({ idea: { abstract, description, skills, _id } }) => {
   };
   return (
     <div className="idea">
-      <h1>{abstract}</h1>
-      <p>{description}</p>
-      {skills.map((skill, i) => (
-        <small key={i} className="skill">
-          {skill}
-        </small>
-      ))}
-      <div>
+      <h1>
+        {abstract.length >= 20 ? abstract.slice(0, 20) + "..." : abstract}
+      </h1>
+      <p>
+        {description.length >= 50
+          ? description.slice(0, 50) + "..."
+          : description}
+      </p>
+      <div className="skills">
+        {skills.length !== 1 || skills[0] !== ""
+          ? skills.map((skill, i) => (
+              <small key={i} className="skill">
+                {skill}
+              </small>
+            ))
+          : null}
+      </div>
+
+      <div className="input">
         <input
           value={name}
-          placeholder="Enter name"
+          placeholder="Name: "
           onChange={(e) => setName(e.target.value)}
           required
         />
         <Link onClick={handleClick} to={`/room/${_id}/name/${name}`}>
-          Join
+          <i className="fas fa-sign-in-alt"></i>
         </Link>
       </div>
     </div>

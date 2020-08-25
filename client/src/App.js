@@ -11,7 +11,7 @@ const App = () => {
     <Router>
       <Navbar />
       <section className="container">
-        <Intro />
+        <Route exact path="/" component={Intro} />
         <Route exact path="/" component={Ideas} />
         <Route exact path="/room/:id/name/:name" component={Room} />
         <Route exact path="/create-idea" component={CreateIdea} />
