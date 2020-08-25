@@ -1,9 +1,31 @@
 .form {
+  padding: 3rem 5rem;
   display: flex;
   flex-direction: column;
 }
 
 .form input {
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   margin-bottom: 0.5rem;
+}
+
+.form button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #5c88d3;
+  border: none;
+  color: white;
+  border-radius: 15px;
+}
+.form-text {
+  color: rgb(19, 101, 126);
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.form-hint {
+  padding-left: 1rem;
+  color: grey;
+  margin-bottom: 0.3rem;
 }

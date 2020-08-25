@@ -12,7 +12,7 @@ const IdeaItem = ({ idea: { abstract, description, skills, _id } }) => {
   return (
     <div className="idea">
       <h1>
-        {abstract.length >= 20 ? abstract.slice(0, 20) + "..." : abstract}
+        {abstract.length >= 15 ? abstract.slice(0, 15) + "..." : abstract}
       </h1>
       <p>
         {description.length >= 50

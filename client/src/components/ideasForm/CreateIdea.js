@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Redirect } from "react-router-dom";
 import "./Form.css";
 import axios from "axios";
@@ -33,31 +33,39 @@ const CreateIdea = () => {
     return <Redirect to="/" />;
   }
   return (
-    <form className="form" onSubmit={onSubmit}>
-      <input
-        value={abstract}
-        name="abstract"
-        onChange={handleChange}
-        placeholder="Abstract"
-        autoComplete="off"
-        required
-      />
-      <input
-        value={description}
-        name="description"
-        onChange={handleChange}
-        autoComplete="off"
-        placeholder="Description"
-      />
-      <input
-        value={skills}
-        name="skills"
-        onChange={handleChange}
-        autoComplete="off"
-        placeholder="Skills"
-      />
-      <button type="submit">Create</button>
-    </form>
+    <Fragment>
+      <form className="form" onSubmit={onSubmit}>
+        <h1 className="form-text">Share your idea</h1>
+        <small className="form-hint">Short abstract of the idea</small>
+        <input
+          value={abstract}
+          name="abstract"
+          onChange={handleChange}
+          placeholder="Abstract"
+          autoComplete="off"
+          required
+        />
+        <small className="form-hint">Brief description of the idea</small>
+        <input
+          value={description}
+          name="description"
+          onChange={handleChange}
+          autoComplete="off"
+          placeholder="Description"
+        />
+        <small className="form-hint">
+          Comma seperated values (eg. "Python, JS, MongoDB")
+        </small>
+        <input
+          value={skills}
+          name="skills"
+          onChange={handleChange}
+          autoComplete="off"
+          placeholder="Skills"
+        />
+        <button type="submit">Create</button>
+      </form>
+    </Fragment>
   );
 };
 export default CreateIdea;

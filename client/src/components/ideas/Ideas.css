@@ -1,6 +1,6 @@
 .ideas {
   margin-top: 2rem;
-  padding: 4rem;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
