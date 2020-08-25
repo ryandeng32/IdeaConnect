@@ -17,10 +17,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/code">Code</Link>
+            <a
+              href="https://github.com/ryandeng32/IdeaConnect"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code
+            </a>
           </li>
         </ul>
       </nav>
