@@ -17,9 +17,10 @@ io.on("connection", (socket) => {
   socket.on("join", ({ name, room }, callback) => {
     console.log(`User "${name}" has joined Room "${room}"`);
     const { error, user } = addUser({ id: socket.id, name, room });
+    if (error) return callback(error);
     console.log(user);
     console.log(user.room);
-    if (error) return callback(error);
+
     socket.emit("message", {
       user: "admin",
       text: `${user.name}, welcome to room ${user.room}`,

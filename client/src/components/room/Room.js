@@ -15,7 +15,9 @@ const Room = ({ match }) => {
 
   useEffect(() => {
     socket = io(ENDPOINT);
-    socket.emit("join", { name, room }, () => {});
+    socket.emit("join", { name, room }, (error) => {
+      console.log(error);
+    });
     return () => {
       socket.emit("disconnect");
       socket.close();
