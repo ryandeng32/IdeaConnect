@@ -10,7 +10,7 @@ const Room = ({ match }) => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
 
-  const ENDPOINT = "http://localhost:5000";
+  const ENDPOINT = "https://idea-connect.herokuapp.com/";
   const { room, name } = match.params;
 
   useEffect(() => {
