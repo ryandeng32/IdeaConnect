@@ -3,6 +3,8 @@
 
 > Real-time Chatrooms to connect ideas built with **MERN stack** and **socket.io**
 
+> Real time chatting and updating 
+
 ### Demo 
 > Try out the web app -> [here](https://idea-connect.herokuapp.com/)
 ![IdeaConnect demo](https://github.com/ryandeng32/IdeaConnect/blob/master/assets/landing_page.png)
