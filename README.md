@@ -12,3 +12,5 @@
 
 ### Status
 > In Development
+
+> @TODO: add file structure descriptions
