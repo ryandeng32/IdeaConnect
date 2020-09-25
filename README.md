@@ -13,4 +13,6 @@
 ### Status
 > In Development
 
+> Used Kaffeine to ping website every 30 minutes to stay active
+
 > @TODO: add file structure descriptions
